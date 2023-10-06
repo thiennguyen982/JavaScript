@@ -259,15 +259,112 @@
 //     }
 // })
 
-var students = {
-    "Name": "Nguyen Hoang Thien",
-    "Title": "Fullstack Software Engineer",
-    "Salary": "42.000.000 VNĐ",
-    "Company": "Grab",
-    "Entrance": "1/2025",
-    "Annual Growth": "18%",
-    "Annual Package": "20 - 22",
-    "Leave": "18"
-};
-var lOcation = "Company";
-console.log(students[lOcation]);
+// var students = {
+//     "Name": "Nguyen Hoang Thien",
+//     "Title": "Fullstack Software Engineer",
+//     "Salary": 42000000,
+//     "Company": "Grab",
+//     "Entrance": "1/2025",
+//     "Annual Growth": "18%",
+//     "Annual Package": "20 - 22",
+//     "Leave": 18,
+//     "University": "HCMUT"
+// };
+// var locate = "Company";
+// console.log(students[locate]);
+
+// students.Leave += 1;
+// console.log(students["Leave"]);
+
+// console.log(students["University"]);
+
+// students["University"] = "MIT";
+// console.log(students["University"]);
+
+// students["Study Level"] = "PhD";
+// console.log(students["Study Level"]);
+
+// var relation = {
+//     "Name": "NYU9HC",
+//     "Friends": ["Huy", "Giang", "Hung", "Nam", "Quoc Anh"],
+//     "Best Friends": {
+//         firstName: "Nguyen",
+//         fullName: "Nguyen Hoang Thien"
+//     }
+// };
+// relation["Friends"].forEach(function (element) {
+//     console.log(element);
+// });
+// var bestFriendInRelation = relation["Best Friends"].fullName;
+// console.log(bestFriendInRelation);
+
+// var friend_2 = relation.Friends[0];
+// console.log(friend_2);
+
+// var colors = {};
+
+// colors.Orange = {
+//     code: 123
+// };
+
+// console.log(colors.Orange);
+
+// colors.Black = {
+//     code: [4, 5, 6]
+// }
+
+// console.log(colors.Black.code[1]);
+
+// var blogPosts = [
+//     {
+//         WWID: 12092068,
+//         Title: "Yield Engineer",
+//         Skill: ["Python", "SQL"]
+//     },
+//     {
+//         EntityId: "NYU9HC",
+//         Title: "Fullstack Software Engineer",
+//         Tool: ["Databricks", "Kafka"]
+//     }
+// ];
+// console.log(blogPosts[1].Tool);
+
+// Quiz:
+// var university = [
+//     {
+//         Name: "Nguyen Hoang Thien",
+//         hasGraduted: true,
+//         Year: 2021,
+//         Major: "ChemEng",
+//         Type: "Engineering"
+//     },
+//     {
+//         Name: "Lam Thi Ngoc Yen",
+//         hasGraduted: true,
+//         Year: 2023,
+//         Major: "BioTech",
+//         Type: "Bachelor"
+//     }
+// ]
+// university.forEach(function (element) {
+//     if (element.hasGraduted == true) {
+//         console.log("Name: " + element.Name + " - Major: " + element.Major);
+//     } else {
+//         console.log("Name: " + element.Name);
+//     }
+// })
+
+// var footballPlayer = {
+//     Name: "Cristiano Ronaldo",
+//     Age: 39,
+//     Club: "Al Nashar",
+//     Number: 7,
+//     Postion: "Striker",
+//     Weight: 85,
+//     Height: 1.88,
+//     say: function () {
+//         console.log("Say Hi");
+//     }
+// };
+
+// footballPlayer.say();

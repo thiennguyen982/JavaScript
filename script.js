@@ -368,3 +368,30 @@
 // };
 
 // footballPlayer.say();
+
+// This Keyword => Points to "global object" which is Window
+
+// function addNumber(x, y) {
+//     console.log(x + y);
+//     console.log(this);
+// };
+
+// addNumber(10,38);
+
+// var player_1 = {
+//     Name: "Le Quang Liem",
+//     BirthYear: 1985,
+//     BirthPlace: "Ha Nam",
+//     Weight: 85,
+//     Height: 1.85,
+//     sayHi: function () {
+//         console.log(this);
+//         console.log("Hi " + this.Name);
+//     },
+//     bmICalculator: function () {
+//         var BMI = (this.Height) / (this.Weight * this.Weight);
+//         console.log("Name: " + this.Name + " - " + "BMI: " + BMI);
+//     }
+// };
+
+// player_1.bmICalculator();

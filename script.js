@@ -92,25 +92,46 @@
 //     isWhite = !isWhite;
 // });
 
-// var listItems = document.querySelectorAll("li");
-// var isGreen = false;
+var listItems = document.querySelectorAll("li");
+var isGreen = false;
 
-// for (var index = 0; index < listItems.length; index++) {
-//     listItems[index].addEventListener("click", function () {
-//         console.log("Item Clicked");
-//         if (isGreen) {
-//             this.style.color = "black";
-//         } else {
-//             this.style.color = "green";
-//         }
-//         isGreen = !isGreen;
-//     })
-// }
+for (var index = 0; index < listItems.length; index++) {
+    listItems[index].addEventListener("click", function () {
+        console.log("Item Clicked");
+        if (isGreen) {
+            this.style.color = "black";
+        } else {
+            this.style.color = "green";
+        }
+        isGreen = !isGreen;
+    })
+}
 
-// var oakParagraph = document.querySelector("#OAKTitle");
+var oakParagraph = document.querySelector("#OAKTitle");
 
-// function toggleBackground() {
-//     oakParagraph.classList.toggle("toggleBackground")
-// };
+function toggleBackground() {
+    oakParagraph.classList.toggle("toggleBackground");
+};
 
-// oakParagraph.addEventListener("click", toggleBackground)
+oakParagraph.addEventListener("click", toggleBackground);
+
+listSeries = document.getElementsByClassName("sentaiSeries");
+
+for (let index = 0; index < listSeries.length; index++) {
+    var element = listSeries[index];
+    element.addEventListener("mouseover", function(){
+        this.style.backgroundColor = "blue";
+        this.style.color = "white";
+    });
+    element.addEventListener("mouseout", function () {
+        this.style.backgroundColor = "white";
+        this.style.color = "black";
+    });
+    element.addEventListener("click", function () {
+        if (this.classList.contains("okay")) {
+            this.classList.remove("okay");
+        } else {
+            this.classList.add("okay");
+        };
+    });
+};

@@ -119,19 +119,19 @@ listSeries = document.getElementsByClassName("sentaiSeries");
 
 for (let index = 0; index < listSeries.length; index++) {
     var element = listSeries[index];
-    element.addEventListener("mouseover", function(){
+    element.addEventListener("mouseover", function () {
         this.style.backgroundColor = "blue";
-        this.style.color = "white";
+        this.style.color = "white";        
     });
     element.addEventListener("mouseout", function () {
         this.style.backgroundColor = "white";
-        this.style.color = "black";
+        this.style.color = "black";        
     });
     element.addEventListener("click", function () {
         if (this.classList.contains("okay")) {
             this.classList.remove("okay");
         } else {
             this.classList.add("okay");
-        };
-    });
+        }
+    })
 };
